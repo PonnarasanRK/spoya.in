@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Spoya.in</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amazon+Ember:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Spoya.in</a>
+        <div class="nav-search">
+            <select class="search-dropdown">
+                <option>All Categories</option>
+                <option>Party Wear</option>
+                <option>Traditional</option>
+                <option>Western</option>
+                <option>Casual Wear</option>
+            </select>
+            <input type="text" class="search-input" placeholder="Search Spoya.in">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="nav-right">
+            <a href="login.html" class="account-link">
+                <i class="fas fa-user"></i>
+                <span>Sign in</span>
+            </a>
+            <a href="categories.html">Categories</a>
+            <a href="cart.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Discover Our Collections</h1>
+    </header>
+
+    <!-- Main Products Section -->
+    <div class="main-container">
+        <!-- Filters Sidebar -->
+        <aside class="filter-section">
+            <h3>Filters</h3>
+            <div class="filter-options">
+                <button class="filter-option active" data-category="all">All Products</button>
+                <button class="filter-option" data-category="Party Wear">Party Wear</button>
+                <button class="filter-option" data-category="Casual Wear">Casual Wear</button>
+                <button class="filter-option" data-category="Traditional">Traditional</button>
+                <button class="filter-option" data-category="Western">Western</button>
+                <button class="filter-option" data-category="New Arrivals">New Arrivals</button>
+            </div>
+        </aside>
+
+        <!-- Products Grid Section -->
+        <main class="products-grid-section">
+            <!-- Sort Section -->
+            <div class="sort-section">
+                <span>Sort By:</span>
+                <select id="sort-select">
+                    <option value="featured">Featured</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="newest">Newest First</option>
+                </select>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="products-container" class="product-grid">
+                <!-- Products will be dynamically inserted here by JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Spoya.in is your premier destination for trendy and affordable fashion. We offer a curated collection of clothing that combines style, comfort, and quality.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@spoya.in</p>
+                <p>Phone: +91 7358551444</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Spoya.in. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

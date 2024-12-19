@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Spoya.in</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/product-details.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amazon+Ember:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation will be loaded dynamically -->
+    <nav id="navbar"></nav>
+
+    <main class="product-details-container">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img id="main-product-image" src="" alt="Product Image">
+            </div>
+            <div class="thumbnail-container" id="image-thumbnails">
+                <!-- Thumbnails will be loaded dynamically -->
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1 id="product-name"></h1>
+            <div class="rating-container">
+                <div class="stars" id="average-rating">
+                    <!-- Stars will be filled dynamically -->
+                </div>
+                <span id="rating-count"></span>
+            </div>
+            <div class="price-container">
+                <h2>₹<span id="product-price"></span></h2>
+            </div>
+            <p id="product-description"></p>
+            <div class="stock-info">
+                <span id="stock-status"></span>
+            </div>
+            <button id="add-to-cart-btn" class="primary-button">Add to Cart</button>
+        </div>
+
+        <div class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="rating-summary">
+                <div class="average-rating">
+                    <span id="rating-average"></span>
+                    <div class="stars">
+                        <!-- Stars will be filled dynamically -->
+                    </div>
+                    <span id="total-reviews"></span>
+                </div>
+                <div class="rating-bars">
+                    <!-- Rating distribution bars will be added dynamically -->
+                </div>
+            </div>
+
+            <div class="review-form" id="review-form-container">
+                <!-- Review form will be shown only for verified purchases -->
+            </div>
+
+            <div class="reviews-list" id="reviews-container">
+                <!-- Reviews will be loaded dynamically -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Spoya.in is your premier destination for trendy and affordable fashion. We offer a curated collection of clothing that combines style, comfort, and quality.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@spoya.in</p>
+                <p>Phone: +91 7358551444</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Spoya.in. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/product-details.js"></script>
+</body>
+</html>
